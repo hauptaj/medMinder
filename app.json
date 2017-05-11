@@ -1,0 +1,5 @@
+{
+  "name": "medminder",
+  "description": "App for caretakers",
+  "image": "heroku/nodejs"
+}

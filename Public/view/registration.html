@@ -1,0 +1,22 @@
+<section>
+  <div class="registrationContainer">
+
+    <article>
+      <h2>Register Now</h2>
+    </article>
+
+    <form class="form-control form-inline registrationForm" id="registrationForm">
+      <input type "text" placeholder="First Name" ng-model="object.firstname" class="form-control">
+      <input type "text" placeholder="Last Name" ng-model="object.lastname" class="form-control">
+      <input type "text" placeholder="User Name" ng-model="object.username" class="form-control">
+      <input type "text" placeholder="Password" ng-model="object.password" class="form-control">
+      <input type="email" placeholder="Email" ng-model="object.email" class="form-control"><br>
+      <input class="btn btn-lg btn-success btn-block" type="submit" value="Continue" id="registerButton" ng-click="addUser(object)">
+    </form>
+
+  <div class="registrationSpacer">
+  </div>
+
+</div>
+
+</section>

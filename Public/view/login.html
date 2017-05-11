@@ -1,0 +1,38 @@
+<div class="container-fluid">
+
+    <div class="row overlayRow">
+        <div class="col-xs-12">
+
+        </div>
+    </div>
+
+    <div class="row videoRow">
+          <video id="my-video" class="video" autoplay="autoplay" loop="loop" muted="" poster="assets/ScreenShot.png">
+                  <source src="assets/pillsBW.mp4" type="video/mp4" />
+                  <source src="assets/PillsBW.ogv" type="video/ogg" />
+                  <source src="assets/PillsBW.webm" type="video/webm" />
+          </video>
+    </div>
+
+    <div class="row outlineLogo">
+            <img src="assets/MedMinderLogoOutline.png" class="img-responsive" alt="Med Minder Logo">
+    </div>
+
+    <div class="row login">
+        <div class="col-xs-6 col-xs-offset-3" id="loginContainer">
+
+            <form class="form-inline">
+                <label class="sr-only" for="inlineFormInput">Username</label>
+                <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0 inlineFormInput" placeholder="Username" ng-model="user.username" id="userInput">
+
+                <label class="sr-only" for="inlineFormInput">Password</label>
+                <input type="password" class="form-control mb-2 mr-sm-2 mb-sm-0 inlineFormInput" placeholder="Password" ng-model="user.password" id="passInput">
+
+                <input class="btn btn-lg btn-success btn-block" type="submit" value="Login" id="logButton" ng-click="moveAndUse(user)">
+
+                <p class="registerNow">Not a user? <a href="#/register">Register</a> now.</p>
+
+            </form>
+        </div>
+    </div>
+</div>

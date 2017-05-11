@@ -1,0 +1,90 @@
+
+<section class="tablePosition">
+  <article>
+
+        <div id="warn" ng-model="message" ng-show="showMessage" class="message fadein fadeout">
+            <p id="bigWarn">WARNING:
+                <p>{{message}}</p>
+        </div>
+
+        <!-- <div class="table-view"> -->
+          <div class="medListContainer container medPage">
+            <div class="col-xs-12">
+              <loved-title></loved-title>
+            </div>
+              <ul class="list-group header">
+                  <li class="list-group-item">
+                      <span><strong>Name</strong></span>
+                      <span><strong>Dosage<br><em>(mg)</em></strong></span>
+                      <span><strong>Time</strong></span>
+                      <span class="lastSpan"><strong>Rx Number</strong></span>
+                  </li>
+                </ul>
+
+                <ul class="itemList">
+                    <div class="switchContainer" ng-repeat="med in medicine">
+                      <li class="list-group-item medListItem">
+                      <div class="flip-container" ng-class="{flip: med.flipped}">
+                    	  <div class="flipper">
+                      		<div class="front">
+                            <button type="button" name="delete" class="li-delete" ng-click="deleteMed(med.id, personsPage.personid)">
+                              <span class="glyphicon glyphicon-remove">
+                            </button>
+                      			<span class="medSpan">{{med.name}}</span>
+                            <span class="medSpan">{{med.dosage}}</span>
+                            <span class="medSpan">{{med.time.substr(0,5)}} </span>
+                            <span class="medSpan lastSpan">{{med.rxnumber}}</span>
+                            <btn class="editFlip medEdit" ng-click="med.flipped = true;">Edit</btn>
+                      		</div>
+
+                      		<div class="back">
+                      			<input type "text" placeholder="Medicine Name" ng-model="newMed.name" class="form-control">
+                            <input type "number" placeholder="Dosage" ng-model="newMed.dosage"class="form-control">
+                            <input type "text" placeholder="Time" ng-model="newMed.time" class="form-control">
+                            <btn class="subButton" ng-click="med.flipped = false; updateMed(newMed, med.id, personsPage.personid)">Submit</btn>
+                      		</div>
+                    	 </div>
+                      </div>
+                      </li>
+                    </div>
+                </ul>
+
+<!-- <<<<<<< HEAD -->
+        <!-- <table>
+            <td> <input type "text" placeholder="Medicine Name" ng-model="newMed.name"></td>
+            <td> <input type "number" placeholder="Dosage" ng-model="newMed.dosage"></td>
+            <td> <input type "text" placeholder="Time" ng-model="newMed.time"></td>
+            <td><button type="button" name="edit" ng-click="updateMed(newMed, med.id, personsPage.personid)">Edit</button></td>
+            </tr>
+        </table> -->
+        <!-- <div class="addDiv">
+          <input type="text" placeholder="Medicine" name="medicine" value="" ng-model="med.name" ng-keyup="complete(med.name)" class="form-control">
+          <ul ng-model="hidethis" ng-hide="hidethis" class="list-group listView">
+              <li ng-repeat="medData in filterMedicine" ng-click="fillTextBox(medData)" class="list-group-item"> {{ medData }}</li>
+          </ul>
+          <input type "number" placeholder="Dosage" ng-model="med.dosage" class="form-control">
+          <input type="text" placeholder="04:00" ng-model="med.time" class="form-control"><br>
+          <button type="button" ng-click="addMed(med, personsPage.personid)" id="addButton">Add</button> -->
+<!-- ======= -->
+            <!-- </ul>
+          </div> -->
+      </div>
+
+      <div class="addMedFormContainer container">
+        <h2>Add a Medicine</h2>
+        <form class="form-control form-inline addMedForm" >
+          <input type="text" name="medicine" value="" ng-model="med.name" ng-keyup="complete(med.name)" class="form-control" placeholder="medicine">
+          <ul ng-model="hidethis" ng-hide="hidethis" class="list-group listView">
+              <li ng-repeat="medData in filterMedicine" ng-click="fillTextBox(medData)" class="list-group-item autoCompleteItem"> {{ medData }}</li>
+          </ul>
+          <input type "number" placeholder="Dosage" ng-model="med.dosage" class="form-control">
+          <input type="text" placeholder="04:00PM" ng-model="med.time" class="form-control"><br>
+          <input class="btn btn-lg btn-success btn-block" type="submit" value="Add" id="addMedButton" ng-click="addMed(med, personsPage.personid)">
+        </form>
+      </div>
+
+      <div class="registrationSpacer">
+      </div>
+
+  </article>
+</section>

@@ -1,0 +1,969 @@
+/* =============================================================================
+  HTML, BODY
+============================================================================= */
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: "Oxygen", sans-serif;
+    color: #888;
+    /*background: #fff;*/
+    /* For browsers that do not support gradients */
+    /*background-image: -webkit-linear-gradient(#fff, #86acd4);*/
+    /* For Safari 5.1 to 6.0 */
+    /*background-image: -o-linear-gradient(#fff, #86acd4);*/
+    /* For Opera 11.1 to 12.0 */
+    /*background-image: -moz-linear-gradient(#fff, #86acd4);*/
+    /* For Firefox 3.6 to 15 */
+    /*background-image: linear-gradient(#fff, #86acd4);*/
+    /* Standard syntax */
+    /*background-image: url("../assets/bkgd.jpg");*/
+    /*background-size: cover;*/
+    background-color: white;
+}
+
+div.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+
+}
+
+div.container-fluid {
+  background-color: transparent;
+}
+/* =============================================================================
+  HEADER
+============================================================================= */
+
+.navbar-default .navbar-toggle {
+    border-color: #86acd4;
+    border-radius: 50px;
+}
+
+button.navbar-toggle:visited {
+    background-color: transparent;
+}
+
+.navbar-header {
+    background: #86acd4;
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#fff, #86acd4);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#fff, #86acd4);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#fff, #86acd4);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#fff, #86acd4);
+    /* Standard syntax */
+    height: 80px;
+    width: 100%;
+}
+
+.navbar-collapse {
+  background-color: rgba(0, 0, 0, 0.5);
+  /*height: 110px;*/
+  top: -22px;
+  position: relative;
+}
+
+.navbar-nav>li>a {
+    padding-top: 5px;
+    color: white;
+}
+
+
+.navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar-collapse {
+  text-align: center;
+}
+
+.navbar-nav>li>a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+.headerImg {
+    display: block;
+    margin: 0 auto 0 auto;
+    width: 100px;
+}
+
+
+/* =============================================================================
+  CONTENT
+============================================================================= */
+
+row.overlay {
+    position: relative;
+    z-index: 2;
+    margin: 0 auto;
+    max-width: 720px;
+    text-align: center;
+    color: #888;
+}
+
+a {
+    display: inline-block;
+}
+
+/* =============================================================================
+  VIEW ELEMENTS
+============================================================================= */
+
+h2 {
+    margin: 0 auto 0 auto;
+    font-family: 'Slabo 27px', Helvetica, Arial, sans-serif;
+    text-align: center;
+    color: #545351;
+    font-size: 24px;
+    padding: 15px 0 15px 0;
+    /*font-weight: bold;*/
+}
+
+.login {
+    position: relative;
+    top: -100px;
+    z-index: 5;
+}
+
+.outlineLogo {
+    width: 40%;
+    z-index: 5;
+    margin: 0 auto 0 auto;
+}
+
+.img-responsive {
+    position: relative;
+    top: -100px;
+    width: 80%;
+    margin: 0 auto 0 auto;
+}
+
+.overlayRow {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    background-color: LIGHTSTEELBLUE;
+    opacity: 0.4;
+    z-index: 2;
+    min-width: 110%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+.videoRow {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+}
+
+video {
+    min-width: 110%;
+}
+
+
+.message {
+    color: red;
+    width: 700px;
+    margin: 0 auto 0 auto;
+    position: relative;
+    display: inline-block;
+    z-index: 20;
+    text-align: center;
+}
+
+#warn {
+  background-color: white;
+  box-shadow: 9px 10px 22px -2px rgba(0, 0, 0, 0.51);
+  border: 1px solid #888;
+  border-radius: 15px;
+  margin: 0 auto 0 auto;
+  postion: relative;
+}
+
+#bigWarn {
+  font-weight: bold;
+  color: red;
+  font-size: 24px;
+  text-shadow:  2px 5px 7px grey;
+}
+
+p {
+  color: red;
+  font-size: 18px;
+}
+.alert {
+    width: 100%;
+    color: red;
+    text-align: center;
+}
+
+#warning {
+    font-weight: bold;
+    font-size: 36px;
+    text-shadow: 2px 2px 5px #666;
+}
+
+label {
+    width: 200px;
+    float: left;
+    margin: 0 20px 0 0;
+}
+
+.form-inline {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.form-control {
+    display: inline-block;
+    width: 100%;
+    color: white;
+    margin: 0 auto 0 auto;
+}
+
+input.form-control {
+    display: inline-block;
+    height: 40px;
+    width: 50%;
+    margin: 5px;
+    /*padding: 8px 20px;*/
+    border: 2px solid white;
+    background-color: transparent;
+    border-radius: 50px;
+    text-align: center;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    color: white;
+}
+
+input.form-control:focus {
+    background-color: #86acd4;
+    border: 2px solid white;
+    color: white;
+}
+
+input.inlineFormInput {
+    color: white;
+}
+
+input.btn.btn-lg.btn-success.btn-block {
+    display: block;
+    height: 40px;
+    width: 30%;
+    margin: 15px auto 0 auto;
+    padding: 0;
+    text-align: center;
+    background-color: transparent;
+    background-image: none;
+    border-radius: 50px;
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+}
+
+#userInput::-webkit-input-placeholder, #passInput::-webkit-input-placeholder {
+    color: white;
+}
+
+#userInput:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: white;
+    opacity: 1;
+}
+
+#userInput::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: white;
+    opacity: 1;
+}
+
+#userInput:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: white;
+}
+
+
+/*Login Button*/
+
+input#logButton {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #86acd4;
+    color: white;
+    -webkit-box-shadow: 9px 10px 22px -2px rgba(0, 0, 0, 0.51);
+    -moz-box-shadow: 9px 10px 22px -2px rgba(0, 0, 0, 0.51);
+    box-shadow: 9px 10px 22px -2px rgba(0, 0, 0, 0.51);
+    font-size: 15px;
+}
+
+input#logButton:hover {
+    border-color: #86acd4;
+    background-color: white;
+    color: black;
+}
+
+input#logButton:active {
+    -webkit-box-shadow: 9px 10px 22px -26px rgba(0, 0, 0, 0.51);
+    -moz-box-shadow: 9px 10px 22px -26px rgba(0, 0, 0, 0.51);
+    box-shadow: 9px 10px 22px -26px rgba(0, 0, 0, 0.51);
+    transform: translateY(-3px);
+}
+
+
+/* =============================================================================
+  Registration Form
+============================================================================= */
+
+div.registrationContainer {
+    width: 100%;
+    text-align: center;
+}
+
+div.registrationSpacer {
+    height: 70px;
+    background: transparent;
+}
+
+#registrationForm.form-control {
+    width: 25%;
+    min-width: 285px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background: transparent;
+    -webkit-box-shadow: 9px 10px 22px -2px rgba(0, 0, 0, 0.51);
+    -moz-box-shadow: 9px 10px 22px -2px rgba(0, 0, 0, 0.51);
+    box-shadow: 9px 10px 22px -2px rgba(0, 0, 0, 0.51);
+}
+
+#registrationForm input, .addMedForm input {
+    margin: 5%;
+    color: black;
+    min-width: 195px;
+}
+
+#registrationForm input:focus, .addMedForm input:focus {
+    color: white;
+}
+
+input#registerButton, input#addMedButton {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #86acd4;
+    color: white;
+    width: 50%;
+    -webkit-box-shadow: 9px 10px 22px -2px rgba(0, 0, 0, 0.51);
+    -moz-box-shadow: 9px 10px 22px -2px rgba(0, 0, 0, 0.51);
+    box-shadow: 9px 10px 22px -2px rgba(0, 0, 0, 0.51);
+}
+
+input#registerButton:hover, input#addMedButton:hover {
+    border-color: #86acd4;
+    background-color: white;
+    color: black;
+}
+
+input#registerButton:active, input#addMedButton:active {
+    -webkit-box-shadow: 9px 10px 22px -26px rgba(0, 0, 0, 0.51);
+    -moz-box-shadow: 9px 10px 22px -26px rgba(0, 0, 0, 0.51);
+    box-shadow: 9px 10px 22px -26px rgba(0, 0, 0, 0.51);
+    transform: translateY(-3px);
+}
+
+p.registerNow {
+    color: white;
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+p.registerNow a {
+    color: #86acd4;
+    text-decoration: underline;
+}
+
+p.registerNow a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+div.table-view {
+    display: table;
+    margin: 0 auto 0 auto;
+    width: 100%;
+    text-align: center;
+}
+
+.list-group.listView {
+    width: 20%;
+}
+
+input.form-control#medicine {
+    width: 20%;
+}
+
+ul.list-group.header {
+    border-bottom: 2px solid #545351;
+    padding-bottom: 10px;
+    color: #545351;
+    display: table;
+    line-height: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+li.list-group-item {
+    /*padding: 0 0 10px 50px;*/
+    border: 0px;
+    margin: 0 auto 0 auto;
+    padding-bottom: 25px;
+    display: block;
+    width: 500px;
+    background-color: transparent;
+}
+
+button.li-delete {
+    border-radius: 50%;
+    background-color: red;
+    border-color: white;
+    color: white;
+    margin-left: -40px;
+    margin-right: 10px;
+    box-shadow: 9px 10px 22px -2px rgba(0, 0, 0, 0.51);
+    float: left;
+}
+
+button.li-delete:hover {
+    background-color: white;
+    color: #333;
+}
+
+button.li-delete:active {
+    background-color: white;
+    border-color: white;
+    color: #333;
+}
+
+button.li-delete .glyphicon {
+    top: 3px;
+}
+
+li>span {
+    display: inline-block;
+    width: 90px;
+    padding: 0 2% 0 2%;
+    text-align: center;
+}
+
+
+/* =============================================================================
+  lovedOnes input Form
+============================================================================= */
+
+.add {
+    float: left;
+}
+
+.list {
+    float: right;
+}
+
+.addDiv {
+    width: 50%;
+    min-width: 285px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.addDiv input {
+    color: black;
+    min-width: 195px;
+}
+
+.addDiv input:focus {
+    color: white;
+}
+
+button#addButton {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #86acd4;
+    color: white;
+    width: 50%;
+    border-radius: 50px;
+    border: 2px solid white;
+    -webkit-box-shadow: 9px 10px 22px -2px rgba(0, 0, 0, 0.51);
+    -moz-box-shadow: 9px 10px 22px -2px rgba(0, 0, 0, 0.51);
+    box-shadow: 9px 10px 22px -2px rgba(0, 0, 0, 0.51);
+}
+
+button#addButton:hover {
+    border-color: #86acd4;
+    background-color: white;
+    color: black;
+}
+
+button#addButton:active {
+    -webkit-box-shadow: 9px 10px 22px -26px rgba(0, 0, 0, 0.51);
+    -moz-box-shadow: 9px 10px 22px -26px rgba(0, 0, 0, 0.51);
+    box-shadow: 9px 10px 22px -26px rgba(0, 0, 0, 0.51);
+    transform: translateY(-3px);
+}
+
+
+/* =============================================================================
+  Medlist input Form
+============================================================================= */
+
+div.addDiv {
+    width: 50%;
+    min-width: 285px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 12px 5px 25px 5px;
+}
+
+div.addDiv input {
+    margin: 5%;
+    color: black;
+    min-width: 195px;
+}
+
+div.addDiv input:focus {
+    color: white;
+}
+
+button#addButton {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #86acd4;
+    color: white;
+    width: 50%;
+    border-radius: 50px;
+    border: 2px solid white;
+    -webkit-box-shadow: 9px 10px 22px -2px rgba(0, 0, 0, 0.51);
+    -moz-box-shadow: 9px 10px 22px -2px rgba(0, 0, 0, 0.51);
+    box-shadow: 9px 10px 22px -2px rgba(0, 0, 0, 0.51);
+}
+
+button#addButton:hover {
+    border-color: #86acd4;
+    background-color: white;
+    color: black;
+}
+
+button#addButton:active {
+    -webkit-box-shadow: 9px 10px 22px -26px rgba(0, 0, 0, 0.51);
+    -moz-box-shadow: 9px 10px 22px -26px rgba(0, 0, 0, 0.51);
+    box-shadow: 9px 10px 22px -26px rgba(0, 0, 0, 0.51);
+    transform: translateY(-3px);
+}
+
+
+/* =============================================================================
+  FOOTER
+============================================================================= */
+
+#disclaimer {
+    color: white;
+    padding: 7px;
+    text-align: center;
+}
+
+.navbar-fixed-bottom {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 40px;
+    max-width: 100%;
+}
+
+/* Flipping Styling */
+
+div.switchContainer {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.flip-container {
+    perspective: 1000px;
+    display: inline;
+    position: relative;
+}
+
+.flip-container, .front, .back {
+    width: auto;
+    height: auto;
+}
+
+.flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    transform-origin: 100% 25px;
+    position: relative;
+    margin-left: -19%;
+}
+
+.front, .back {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.front {
+    z-index: 2;
+    /* for firefox 31 */
+    transform: rotateY(0deg);
+    margin-left: 138px;
+}
+
+div.front button, div.front span {
+    display: inline;
+}
+
+.back {
+    transform: rotateX(180deg);
+    position: absolute;
+}
+
+.back input {
+    width: 20%;
+    min-width: 10px;
+    margin-right: 10px;
+    color: black;
+}
+
+.flip-container.flip .flipper {
+    transform: rotateX(-180deg);
+}
+
+btn.editFlip {
+    display: inline;
+    position: relative;
+    right: 0;
+    background-color: rgb(134, 172, 212);
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.5) 9px 10px 22px -2px;
+    border-radius: 50px;
+    border: 1px solid white;
+    width: 45px;
+    height: 22px;
+    float: right;
+  }
+
+btn.editFlip.medEdit {
+    top: -20px;
+  }
+
+btn.subButton {
+  display: inline;
+  position: relative;
+  right: 0;
+  background-color: rgb(134, 172, 212);
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.5) 9px 10px 22px -2px;
+  border-radius: 50px;
+  border: 1px solid white;
+  width: 55px;
+  height: 22px;
+  float: right;
+  top: 10px;
+}
+
+btn.editFlip:hover, btn.subButton:hover {
+  cursor: pointer;
+}
+
+btn.editFlip:active, btn.subButton:active {
+  transform: translateY(3px);
+}
+
+ul.itemList {
+  /*background-color: grey*/
+}
+
+span.medSpan {
+    width: 95px;
+    float: left;
+}
+
+.list-group.medList {
+    width: 90%;
+    margin: 0;
+}
+
+li.list-group-item.autoCompleteItem {
+    color: black;
+    width: 200px;
+}
+
+li.list-group-item.autoCompleteItem:hover {
+  font-weight: 200px;
+  color: green;
+  cursor: pointer;
+}
+
+/* Med Form */
+
+.addMedForm.form-control {
+    width: 25%;
+    min-width: 240px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-bottom: 10px;
+    -webkit-box-shadow: 9px 10px 22px -2px rgba(0, 0, 0, 0.51);
+    -moz-box-shadow: 9px 10px 22px -2px rgba(0, 0, 0, 0.51);
+    box-shadow: 9px 10px 22px -2px rgba(0, 0, 0, 0.51);
+    background: transparent;
+}
+
+.addMedForm h2 {
+    color: black;
+}
+
+div.medListContainer {
+    float: right;
+    margin-right: 10%;
+    margin-bottom: 10%;
+}
+
+div.medListContainer.medPage {
+  width: 50%;
+  /*margin-right: 5%;*/
+}
+
+/*div.medListContainer.lovedPage {
+  margin-right: 20%;
+}*/
+
+div.addMedFormContainer {
+    float: left;
+    width: 30%;
+    margin-left: 5%;
+}
+
+#addMedButton {
+    width: 50%;
+}
+
+
+
+
+/* =============================================================================
+Keyframes
+============================================================================= */
+
+@keyframes scaleUp {
+    from {
+        opacity: 0.1;
+        transform: scale(0.4);
+    }
+}
+
+@keyframes slideOutLeft {
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.page {
+    bottom: 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 100%;
+}
+
+
+/*.ng-enter {
+  animation: slideInRight 0.7s both ease-in;
+}*/
+
+
+/*.ng-leave {
+  animation: slideOutLeft 0.4s both ease-in;
+}*/
+
+.loved-page.ng-enter, .med-page.ng-enter, .registration-page.ng-enter {
+    animation: scaleUp 0.7s both ease-in;
+}
+
+.loved-page.ng-leave, .med-page.ng-leave, .registration-page.ng-leave {
+    animation: slideOutLeft 0.7s both ease-in;
+}
+
+
+/* =============================================================================
+  Media Queries
+============================================================================= */
+
+@media only screen and (max-width: 768px) {
+    .outlineLogo {
+        margin-top: 40px;
+    }
+    .inlineFormInput {
+        min-width: 150px;
+    }
+    #logButton {
+        min-width: 100px;
+    }
+    img.headerImg {
+      float: left;
+      margin-left: 45%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+  img.headerImg {
+    float: left;
+    margin-left: 40%;
+  }
+    #loginContainer {
+        margin-left: 15%;
+    }
+    /*input#logButton {
+        margin-left: 30px;
+    }*/
+    input.btn.btn-lg.btn-success.btn-block:hover {
+        text-decoration: none;
+    }
+    .outlineLogo {
+        width: 60%;
+        margin-left: 45px;
+    }
+    p.registerNow {
+        width: 130%;
+        font-size: 12px;
+    }
+    p#disclaimer {
+        font-size: 10px;
+    }
+    .addMedForm.form-control {
+      margin-left: -10px;
+    }
+    div.medListContainer {
+      width: 320px;
+      padding: 5px;
+    }
+    div.medListContainer.medPage {
+      width: 95%;
+    }
+    /*div.medListContainer.lovedPage {
+      margin-right: 10%;
+    }*/
+    li.list-group-item {
+      width: 300px;
+      padding: 0;
+      margin-right: 40px;
+    }
+    li.list-group-item.medListItem {
+      margin-right: 55px;
+      height: 20px;
+    }
+    li.list-group-item.medListItem.personItem {
+      margin-right: 50px;
+    }
+    list-group-item:last-child {
+      margin-right: 0;
+    }
+    span.lastSpan {
+      display: none;
+    }
+    span.medSpan.lastSpan {
+      display: none;
+      max-width: 15px;
+    }
+    span.medSpan {
+      width: 70px;
+    }
+    ul.itemList {
+      padding: 0;
+      margin-left: -125px;
+    }
+    .flipper {
+      height: 0;
+      margin-left: -25%;
+    }
+    btn.editFlip.medEdit {
+      right: -40px;
+    }
+    .back {
+      margin-left: 115px;
+    }
+    .back input {
+      width: 25%;
+    }
+    btn.subButton {
+      right: -50px;
+      top: -35px;
+    }
+    button.li-delete {
+      margin-left: -23px;
+    }
+    ul.list-group.header {
+      padding-bottom: 0;
+    }
+    btn.editFlip.loveFlip {
+      right: -29px;
+      top: -20px;
+    }
+    .back.loveBack {
+      margin-left: 100px;
+
+    }
+    btn.subButton {
+      right: -40px;
+    }
+}
+
+@media only screen and (max-width: 1061px) {
+    div.medListContainer {
+        float: none;
+        display: block;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    div.addMedFormContainer {
+        float: none;
+        clear: both;
+        width: auto;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

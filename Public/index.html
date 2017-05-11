@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Med Minder</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular-route.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular-animate.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.0.min.js" integrity="sha256-JAW99MJVpJBGcbzEuXk4Az05s/XyDdBomFqNlM3ic+I=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen:400,300,700|" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body ng-app="medMod">
+
+    <div class="container-fluid">
+        <div class="navbar navbar-default" role="navigation">
+            <div class="navbar-header">
+
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collaps" >
+                    <!-- <span class = "sr-only">Toggle Navigation</span> -->
+                    <span class = "icon-bar"></span>
+                    <span class = "icon-bar"></span>
+                    <span class = "icon-bar"></span>
+                </button>
+
+                <img class="headerImg" src="assets/MedMinderLogo.png" alt="Med Minder Logo">
+
+            </div>
+        </div>
+
+        <div class="collapse navbar-collapse navbar-ex1-collaps">
+            <ul class="nav navbar-nav">
+                <li class="navLink"><a href="#/login">Login</a></li>
+                <li class="navLink"><a href="#/main">Loved Ones</a></li>
+                <li class="navLink"><a href="#/content">Meds</a></li>
+            </ul>
+        </div>
+
+        <div class="row viewRow">
+            <div class="col-xs-12 columns">
+
+                <div class="page {{ pageClass }}" ng-view></div>
+
+            </div>
+        </div>
+
+        <footer class="navbar-fixed-bottom">
+            <p id="disclaimer">All content found on this app was created for a student project and is for information purposes only.</p>
+        </footer>
+
+    </div>
+
+    <script type="text/javascript" src="js/module.js"></script>
+    <script type="text/javascript" src="js/medListController.js"></script>
+    <script type="text/javascript" src="js/lovedOnesController.js"></script>
+    <script type="text/javascript" src="js/loginController.js"></script>
+    <script type="text/javascript" src="js/registrationController.js"></script>
+    <script type="text/javascript" src="js/userFactory.js"></script>
+    <script type="text/javascript" src="js/lovedFactory.js"></script>
+    <script type="text/javascript" src="js/medFactory.js"></script>
+    <script type="text/javascript" src="js/sharedFactory.js"></script>
+
+  </body>
+
+</html>

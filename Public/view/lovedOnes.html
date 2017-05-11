@@ -1,0 +1,58 @@
+
+<section class="tablePosition">
+  <article>
+
+    <div class="medListContainer lovedPage">
+      <h2>Loved Ones</h2>
+        <ul class="list-group header">
+            <li class="list-group-item">
+                <span><strong>Name</strong></span>
+                <span><strong>Weight(lb)<br></strong></span>
+                <span><strong>Age</strong></span>
+            </li>
+        </ul>
+
+            <ul class="itemList">
+              <div class="switchContainer" ng-repeat="person in personList">
+                <li class="list-group-item medListItem personItem">
+                <div class="flip-container" ng-class="{flip: med.flipped}">
+                  <div class="flipper">
+                    <div class="front">
+                      <button type="button" name="delete" class="li-delete" ng-click="removeLovedOne(person.personid, userId)">
+                        <span class="glyphicon glyphicon-remove">
+                      </button>
+                      <span class="medSpan"><a ng-click="moveAndLoad(person)" href="#/content">{{person.name}}</a></span>
+                      <span class="medSpan">{{person.weight}}</span>
+                      <span class="medSpan">{{person.age}}</span>
+                      <btn class="editFlip loveFlip" ng-click="med.flipped = true;">Edit</btn>
+                    </div>
+
+                    <div class="back loveBack">
+                      <input type "text" placeholder="Loved One's Name" ng-model="newObject.name" class="form-control">
+                      <input type "number" placeholder="Weight" ng-model="newObject.weight"class="form-control">
+                      <input type "number" placeholder="Age" ng-model="newObject.age" class="form-control">
+                      <btn class="subButton" ng-click="med.flipped = false; alterLovedOne(newObject, person.personid, userId)">Submit</btn>
+                    </div>
+                 </div>
+                </div>
+                </li>
+              </div>
+            </ul>
+    </div>
+
+    <div class="addMedFormContainer">
+      <h2>Add a Loved One</h2>
+      <form class="form-control form-inline addMedForm" >
+        <input type="text" name="name" value="" ng-model="object.name" class="form-control" placeholder="Loved One's Name">
+        <input type "number" placeholder="Weight" ng-model="object.weight" class="form-control">
+        <input type="number" placeholder="Age" ng-model="object.age" class="form-control"><br>
+        <input class="btn btn-lg btn-success btn-block" type="submit" value="Add" id="addMedButton" ng-click="addLovedOne(object)">
+      </form>
+    </div>
+
+    <div class="registrationSpacer">
+    </div>
+
+
+  </article>
+</section>
